@@ -29,7 +29,7 @@ html, body{
 .NFT__description-price{
     color: var(--cyan);
 }
-.card__text-container, .NFT__description-container{
+.card__text-container, .NFT__creator-container{
     padding: 0 10px 25px 25px;
 }
 .card__image-overlay{
@@ -64,6 +64,9 @@ html, body{
     display: flex;
     justify-content: space-between;
     font-weight: 400;
+    border-bottom: 1px solid var(--line);
+    margin: 0 25px;
+    padding-bottom: 15px;
 }
 .NFT__description-price-container, .NFT__description-timeleft-container{
     display: flex;
@@ -77,4 +80,21 @@ html, body{
     transition-duration: 1s;
     transition-delay: 0.5s;
     transition-timing-function: ease-in;
+}
+.NFT__creator-avatar{
+    width: 50x;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--soft-blue);
+}
+.NFT__creator-container{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.NFT__creator{
+    padding-left: 15px;
+}
+.span__creator{
+    color: var(--white);
 }
