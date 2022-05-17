@@ -6,17 +6,40 @@
 --line: hsl(215, 32%, 27%);
 --white: hsl(0, 0%, 100%);
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body{
     max-width: 1440px;
+    font-family: 'Outfit', 'Arial', sans-serif;
     font-size: 18px;
+    background-color: var(--main-BG);
 }
 .card{
     width: 450px;
     background-color: var(--card-BG);
     color: var(--soft-blue);
+    border-radius: 2%;
+    font-weight: 300;
+    line-height: 26px;
+}
+.card__text-container{
+    padding: 0 0 25px 25px;
 }
 .card__header-title{
     color: var(--white);
     font-size: 22px;
     line-height: 28px;
+}
+.card__header-title:hover{
+    color: var(--cyan);
+}
+.card__image-container{
+    padding: 25px;
+    height: 450px;
+}
+.NFT-image{
+    width: 100%;
 }
