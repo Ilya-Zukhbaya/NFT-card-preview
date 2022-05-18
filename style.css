@@ -1,0 +1,100 @@
+:root{
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--main-BG: hsl(217, 54%, 11%);
+--card-BG: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Outfit', 'Arial', sans-serif;
+    font-size: 18px;
+    background-color: var(--main-BG);
+}
+.card{
+    margin: 50px auto;
+    width: 450px;
+    position: relative;
+    background-color: var(--card-BG);
+    color: var(--soft-blue);
+    border-radius: 2%;
+    font-weight: 300;
+    line-height: 26px;
+}
+.NFT__description-price{
+    color: var(--cyan);
+}
+.card__text-container, .NFT__creator-container{
+    padding: 0 10px 25px 25px;
+}
+.card__image-overlay{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 25px;
+    background-color: var(--cyan);
+    border-radius: 2%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__header-title{
+    color: var(--white);
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 15px;
+}
+.card__header-title:hover{
+    color: var(--cyan);
+}
+.card__image-container{
+    padding: 25px;
+    height: 450px;
+}
+.NFT-image{
+    width: 100%;
+}
+.NFT__description-container{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    border-bottom: 1px solid var(--line);
+    margin: 0 25px;
+    padding-bottom: 15px;
+}
+.NFT__description-price-container, .NFT__description-timeleft-container{
+    display: flex;
+    align-items: center;
+}
+.NFT__description-price, .NFT__description-timeleft-text{
+    padding-left: 5px;
+}
+.card__image-overlay:hover{
+    opacity: 0.4;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in;
+}
+.NFT__creator-avatar{
+    width: 50x;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--soft-blue);
+}
+.NFT__creator-container{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.NFT__creator{
+    padding-left: 15px;
+}
+.span__creator{
+    color: var(--white);
+}
